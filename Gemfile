@@ -43,3 +43,6 @@ gem 'httparty'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 gem 'thin'
+
+gem 'aws-sdk', '~> 2'
+gem 'dotenv-rails'
