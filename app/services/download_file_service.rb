@@ -10,7 +10,6 @@ class DownloadFileService
     bucket_name = record["s3"]["bucket"]["name"]
     # first_paystubs/9ee9f4bf2ffbd5d32fd6dab8fb7c41cf/IMG_4757_need_a_home.jpg
     key = record["s3"]["object"]["key"]
-    extension = File.extname(key)
     file_name = DIRECTORY << key.split("/").last
 
     File.open(file_name, 'wb') do |file|
