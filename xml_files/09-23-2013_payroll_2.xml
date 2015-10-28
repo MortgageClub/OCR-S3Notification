@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<form:Documents xmlns:form="http://www.abbyy.com/FlexiCapture/Schemas/Export/FormData.xsd" xmlns:addData="http://www.abbyy.com/FlexiCapture/Schemas/Export/AdditionalFormData.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<_Paystubs:_Paystubs addData:DocumentState="Correct" xmlns:_Paystubs="http://www.abbyy.com/FlexiCapture/Schemas/Export/Paystubs.xsd">
+		<_EmployerName>BRIAN R FONG DDS INC</_EmployerName>
+		<_EmployerAddressFirstLine>3426 MURDOCH DR</_EmployerAddressFirstLine>
+		<_EmployerAddressSecondLine>Palo Alto CA 94306</_EmployerAddressSecondLine>
+		<_PeriodBeginning>09/06/2013</_PeriodBeginning>
+		<_PeriodEnding>09/19/2013</_PeriodEnding>
+		<_CurrentSalary>560.00</_CurrentSalary>
+		<_YTDSalary>8,120.00</_YTDSalary>
+		<_CurrentEarnings>Palo Alto CA 94306</_CurrentEarnings>
+	</_Paystubs:_Paystubs>
+</form:Documents>
