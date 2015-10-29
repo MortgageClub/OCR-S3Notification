@@ -7,11 +7,12 @@ class UploadFileToS3Service
     extension = File.extname(file_name)
     file_name.gsub!(extension, ".xml")
 
-    path_to_file = DIRECTORY << file_name
+    path_to_file = DIRECTORY + file_name
     return unless File.exist?(path_to_file)
 
-    key = FOLDER_NAME << file_name
+    key = FOLDER_NAME + file_name
     s3 = Aws::S3::Resource.new
     s3.bucket(BUCKET_NAME).object(key).upload_file(path_to_file)
+    Rails.logger.info("Uploaded #{file_name} to S3")
   end
 end
