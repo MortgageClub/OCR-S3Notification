@@ -46,3 +46,10 @@ gem 'thin'
 
 gem 'aws-sdk'
 gem 'dotenv-rails'
+
+gem 'delayed_job'
+gem 'delayed_job_active_record'
+
+group :test do
+  gem 'rspec-rails', '~> 3.0'
+end
