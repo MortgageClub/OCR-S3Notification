@@ -1,6 +1,6 @@
 class UploadFileToS3Service
   DIRECTORY   = "#{Rails.root}/xml_files/"
-  BUCKET_NAME = "dev-homieo"
+  BUCKET_NAME = "production-homieo"
   FOLDER_NAME = "ocr_results/"
 
   def self.call(file_name)

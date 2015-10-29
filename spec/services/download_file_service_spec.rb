@@ -7,7 +7,7 @@ describe DownloadFileService do
         "Records" => [
           "s3" => {
             "bucket" => {
-              "name" => "dev-homieo"
+              "name" => "production-homieo"
             },
             "object" => {
               "key" => "first_paystubs/9ee9f4bf2ffbd5d32fd6dab8fb7c41cf/document.pdf"
