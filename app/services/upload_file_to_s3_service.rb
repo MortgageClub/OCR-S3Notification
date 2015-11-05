@@ -8,11 +8,25 @@ class UploadFileToS3Service
     file_name.gsub!(extension, ".xml")
 
     path_to_file = DIRECTORY + file_name
-    return unless File.exist?(path_to_file)
+
+    unless File.exist?(path_to_file)
+      p "file does not exist"
+      return
+    end
 
     key = FOLDER_NAME + file_name
+
+    # remove old xml file
+    # Aws::S3::Client.new.delete_object(
+    #   bucket: BUCKET_NAME,
+    #   key: key
+    # )
+
+    p key
+
     s3 = Aws::S3::Resource.new
     s3.bucket(BUCKET_NAME).object(key).upload_file(path_to_file)
-    Rails.logger.info("Uploaded #{file_name} to S3")
+
+    p "uploaded #{path_to_file} at #{Time.zone.now}"
   end
 end
