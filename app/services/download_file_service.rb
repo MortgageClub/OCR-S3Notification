@@ -14,14 +14,17 @@ class DownloadFileService
     key = record["s3"]["object"]["key"]
     file_name = key.split("/").last
     path_to_file = DIRECTORY + file_name
-    path_to_xml = XML_DIR + file_name
+    path_to_xml = XML_DIR + file_name.gsub!(File.extname(file_name),".xml")
+    p path_to_xml
     File.delete(path_to_xml) if File.exist?(path_to_xml)
 
     File.open(path_to_file, "wb") do |file|
       response = s3.get_object({ bucket: bucket_name, key: key }, target: file)
     end
 
-    end_at = Time.zone.now + 20.seconds
+    p "downloaded at #{Time.zone.now}"
+
+    end_at = Time.zone.now + 7.seconds
     while(!File.exist?(path_to_xml) && Time.zone.now < end_at) do
     end
     p "#{end_at}"

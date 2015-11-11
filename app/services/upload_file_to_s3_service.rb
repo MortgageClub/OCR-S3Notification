@@ -11,6 +11,7 @@ class UploadFileToS3Service
 
     unless File.exist?(path_to_file)
       p "file does not exist"
+      p path_to_file
       return
     end
 
