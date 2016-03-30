@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<form:Documents xmlns:form="http://www.abbyy.com/FlexiCapture/Schemas/Export/FormData.xsd" xmlns:addData="http://www.abbyy.com/FlexiCapture/Schemas/Export/AdditionalFormData.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<_PayStubs_Definition:_PayStubs_Definition xmlns:_PayStubs_Definition="http://www.abbyy.com/FlexiCapture/Schemas/Export/PayStubs_Definition.xsd">
+		<_EmployerName>CHARITIES HOUSING DEVELOPMENT CORP.</_EmployerName>
+		<_EmployerAddressFirstLine>1400 PARKMOOR AVE STE 190</_EmployerAddressFirstLine>
+		<_EmployerAddressSecondLine>SAN JOSE, CA 95126</_EmployerAddressSecondLine>
+		<_PeriodBeginning>04/01/2015</_PeriodBeginning>
+		<_PeriodEnding>04/15/2015</_PeriodEnding>
+		<_CurrentSalary>2,406.25</_CurrentSalary>
+		<_YTDSalary>19,135.42</_YTDSalary>
+		<_CurrentEarnings/>
+	</_PayStubs_Definition:_PayStubs_Definition>
+</form:Documents>
